@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="642" width="375" height="30"/>
                                         <state key="normal" title="Final Answer!"/>
                                         <connections>
-                                            <action selector="nextPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="luG-Rk-cuJ"/>
+                                            <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ul-aK-Uie"/>
                                         </connections>
                                     </button>
                                 </subviews>
