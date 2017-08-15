@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,35 +19,38 @@
                         <viewControllerLayoutGuide type="bottom" id="qRh-MJ-tLM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VVg-dz-bm8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J7S-Gh-aM1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J7S-Gh-aM1">
+                                <rect key="frame" x="16" y="16" width="288" height="464"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" ambiguous="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9T-Jj-CHK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9T-Jj-CHK">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" ambiguous="YES" text="Question Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-CE-ozw">
-                                        <rect key="frame" x="0.0" y="20.5" width="375" height="385"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Question Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-CE-ozw">
+                                        <rect key="frame" x="0.0" y="20.5" width="288" height="188"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="188" id="g7h-oG-o30"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" ambiguous="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-gY-crf">
-                                        <rect key="frame" x="0.0" y="405.5" width="375" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3M-gY-crf">
+                                        <rect key="frame" x="0.0" y="208.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzf-aN-xZ3">
-                                        <rect key="frame" x="0.0" y="426" width="375" height="216"/>
+                                    <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hzf-aN-xZ3">
+                                        <rect key="frame" x="0.0" y="229" width="288" height="205"/>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck8-BO-flL">
-                                        <rect key="frame" x="0.0" y="642" width="375" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck8-BO-flL">
+                                        <rect key="frame" x="0.0" y="434" width="288" height="30"/>
                                         <state key="normal" title="Final Answer!"/>
                                         <connections>
                                             <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ul-aK-Uie"/>
@@ -58,8 +61,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J7S-Gh-aM1" firstAttribute="leading" secondItem="VVg-dz-bm8" secondAttribute="leadingMargin" constant="-16" id="7qd-Yz-4y6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="J7S-Gh-aM1" secondAttribute="trailing" constant="-16" id="fOc-2u-X5N"/>
+                            <constraint firstItem="J7S-Gh-aM1" firstAttribute="leading" secondItem="VVg-dz-bm8" secondAttribute="leadingMargin" id="7qd-Yz-4y6"/>
+                            <constraint firstItem="J7S-Gh-aM1" firstAttribute="top" secondItem="VVg-dz-bm8" secondAttribute="topMargin" constant="16" id="P1z-Bv-U3q"/>
+                            <constraint firstItem="qRh-MJ-tLM" firstAttribute="top" secondItem="J7S-Gh-aM1" secondAttribute="bottom" id="deK-8M-3S9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J7S-Gh-aM1" secondAttribute="trailing" id="fOc-2u-X5N"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="117"/>
+            <point key="canvasLocation" x="199" y="84"/>
         </scene>
     </scenes>
 </document>
