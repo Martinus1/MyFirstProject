@@ -12,6 +12,7 @@
 		946750501F425B5A00D933C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9467504E1F425B5A00D933C0 /* Main.storyboard */; };
 		946750521F425B5A00D933C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946750511F425B5A00D933C0 /* Assets.xcassets */; };
 		946750551F425B5A00D933C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946750531F425B5A00D933C0 /* LaunchScreen.storyboard */; };
+		9467505D1F42673B00D933C0 /* Flashcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467505C1F42673B00D933C0 /* Flashcards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		946750511F425B5A00D933C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		946750541F425B5A00D933C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		946750561F425B5A00D933C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9467505C1F42673B00D933C0 /* Flashcards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				9467504A1F425B5A00D933C0 /* AppDelegate.swift */,
 				9467504C1F425B5A00D933C0 /* ViewController.swift */,
+				9467505C1F42673B00D933C0 /* Flashcards.swift */,
 				9467504E1F425B5A00D933C0 /* Main.storyboard */,
 				946750511F425B5A00D933C0 /* Assets.xcassets */,
 				946750531F425B5A00D933C0 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9467505D1F42673B00D933C0 /* Flashcards.swift in Sources */,
 				9467504D1F425B5A00D933C0 /* ViewController.swift in Sources */,
 				9467504B1F425B5A00D933C0 /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				9467505B1F425B5A00D933C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
