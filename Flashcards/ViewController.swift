@@ -62,11 +62,13 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
         if CardCollection.instance.checkAnswer(answerPickerView.selectedRow(inComponent: 0)){
             // answer is correct
             alert = UIAlertController(title: "Correct", message: "Correct Answer!", preferredStyle: UIAlertControllerStyle.alert)
+            
             alert.addAction(UIAlertAction(title: "Yay!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
         }
         else {
             // answer incorrect
+            CardCollection.instance.currentIndex = 0
             alert = UIAlertController(title: "Incorrect", message: "Incorrect Answer.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Aww.", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
